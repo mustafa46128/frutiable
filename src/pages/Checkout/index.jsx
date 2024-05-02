@@ -1,5 +1,6 @@
 import Billing from "@/Components/Billing";
 import Checkoutproduct from "@/Components/Checkoutproduct";
+import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import Shop from "@/Components/Shop";
 import Topbar from "@/Components/Topbar";
@@ -11,15 +12,15 @@ export default function index() {
       <Topbar />
       <Navbar />
       <div className="w-full">
-        <Shop title="Checkout" />
-        <div className="w-[80%] mx-auto flex justify-between mt-10 gap-10">
-          <div className="w-[60%]">
-            <Billing />
-          </div>
-          <div className="w-[40%]">
-            <Checkoutproduct />
-          </div>
+        <Shop title="Checkout" desc="Checkout" />
+        <div className="w-[80%] mx-auto grid grid-cols-12 mt-10 gap-10">
+          <h1 className="text-[40px] font-raleway font-[600] text-[#45595b] col-span-full ">
+            Billing details
+          </h1>
+          <Billing />
+          <Checkoutproduct />
         </div>
+        <Footer />
       </div>
     </div>
   );

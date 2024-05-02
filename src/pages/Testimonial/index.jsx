@@ -1,4 +1,5 @@
 import Client from "@/Components/Client";
+import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import Shop from "@/Components/Shop";
 import Topbar from "@/Components/Topbar";
@@ -9,8 +10,9 @@ export default function index() {
     <div>
       <Topbar />
       <Navbar />
-      <Shop title={"Testimonial"} />
+      <Shop title={"Testimonial"} desc={"Testimonial"} />
       <Client />
+      <Footer />
     </div>
   );
 }

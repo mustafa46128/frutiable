@@ -22,7 +22,6 @@ const QuantityInput = ({ className = "" }) => {
           onClick={decrementQuantity}
         >
           <FaMinus className=" " />
-          {/* <i className="fa fa-minus"></i> */}
         </button>
       </div>
       <input

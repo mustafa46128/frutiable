@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
 import Slider from "react-slick";
 
 const products = [

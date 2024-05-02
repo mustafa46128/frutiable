@@ -24,7 +24,7 @@ export default function index() {
             We’re sorry, the page you have looked for does not exist in our
             website! Maybe go to our home page or try to use a search?
           </p>
-          <button className="rounded-full border border-bs-secondary py-3 px-8 font-[600] text-[#747d88] hover:text-[white] hover:bg-bs-secondary">
+          <button className="rounded-full border border-bs-secondary py-4 px-10 font-[600] text-[#747d88] hover:text-[white] hover:bg-bs-secondary">
             Go Back To Home
           </button>
         </div>

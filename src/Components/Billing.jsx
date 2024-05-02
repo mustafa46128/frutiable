@@ -2,20 +2,17 @@ import React from "react";
 
 export default function Billing() {
   return (
-    <div className="w-full">
-      <h1 className="text-[40px] font-raleway font-[600] text-[#45595b]">
-        Billing details
-      </h1>
+    <div className="w-full col-span-full lg:col-span-7 ">
       <div className="w-full flex items-center gap-5">
         <div className="w-full flex flex-col">
-          <label htmlFor="">First Name *</label>
+          <label htmlFor="">First Name*</label>
           <input
             type="text"
             className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
           />
         </div>
         <div className="w-full flex flex-col">
-          <label htmlFor="">First Name *</label>
+          <label htmlFor="">Last Name*</label>
           <input
             type="text"
             className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
@@ -23,35 +20,36 @@ export default function Billing() {
         </div>
       </div>
       <div className="w-full flex flex-col">
-        <label htmlFor="">First Name *</label>
+        <label htmlFor="">Company Name*</label>
         <input
           type="text"
           className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
         />
       </div>
       <div className="w-full flex flex-col">
-        <label htmlFor="">First Name *</label>
+        <label htmlFor="">Address *</label>
+        <input
+          type="text"
+          placeholder="House Number Street Name"
+          className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
+        />
+      </div>
+      <div className="w-full flex flex-col">
+        <label htmlFor="">Town/City*</label>
         <input
           type="text"
           className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
         />
       </div>
       <div className="w-full flex flex-col">
-        <label htmlFor="">First Name *</label>
+        <label htmlFor="">Country*</label>
         <input
           type="text"
           className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
         />
       </div>
       <div className="w-full flex flex-col">
-        <label htmlFor="">First Name *</label>
-        <input
-          type="text"
-          className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
-        />
-      </div>
-      <div className="w-full flex flex-col">
-        <label htmlFor="">First Name *</label>
+        <label htmlFor="">PosteCode/Zip*</label>
         <input
           type="text"
           className="border rounded-lg px-3 py-1 w-full focus:outline-none mt-3"
@@ -82,7 +80,7 @@ export default function Billing() {
           cols=""
           rows="10"
           placeholder="Order Notes (optional)"
-          className="border border-bs-gray rounded-lg w-full px-2 py-1"
+          className="border border-bs-gray rounded-lg  w-full px-2 py-1"
         ></textarea>
       </div>
     </div>

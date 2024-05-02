@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { AiFillCopyrightCircle } from "react-icons/ai";
 import {
   FaCopyright,
   FaFacebookF,
@@ -30,17 +31,17 @@ function Footer() {
             </button>
           </form>
         </div>
-        <div className=" w-full flex items-center justify-end gap-5">
+        <div className=" flex justify-end gap-5">
           <div className="group w-10 h-10 border rounded-full border-bs-secondary flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
             <FaTwitter className="text-bs-secondary group-hover:text-black" />
           </div>
-          <div className=" group w-10 h-10 border rounded-full flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
+          <div className=" group w-10 h-10 border rounded-full border-bs-secondary flex  items-center justify-center hover:bg-bs-secondary cursor-pointer">
             <FaFacebookF className="border-bs-secondary text-bs-secondary group-hover:text-black" />
           </div>
-          <div className=" group w-10 h-10 border rounded-full flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
+          <div className=" group w-10 h-10 border rounded-full border-bs-secondary flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
             <FaYoutube className="text-bs-secondary group-hover:text-black" />
           </div>
-          <div className=" group w-10 h-10 border rounded-full flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
+          <div className=" group w-10 h-10 border rounded-full border-bs-secondary flex items-center justify-center hover:bg-bs-secondary cursor-pointer">
             <FaLinkedinIn className="text-bs-secondary group-hover:text-black" />
           </div>
         </div>
@@ -112,9 +113,8 @@ function Footer() {
       </div>
       <div className="flex flex-wrap justify-center md:justify-between w-[80%] mx-auto mt-14 items-center">
         <div className="flex gap-1 justify-center items-center">
-          <div className="w-5 h-5 bg-white rounded-full flex justify-center items-center ">
-            {/* <p className="font-[600] ">C</p> */}
-            <FaCopyright />
+          <div className="w-4 h-4 flex justify-center items-center ">
+            <FaCopyright className="" />
           </div>
           <h1 className="text-white text-base">
             {" "}

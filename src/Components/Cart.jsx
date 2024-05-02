@@ -8,7 +8,7 @@ export default function Cart() {
   const tableData = [
     {
       image: "/vegetable-item-3.png",
-      name: "Mustafa",
+      name: "Big Banana",
       Price: "2.99 $",
       quantity: "Sheikh",
       total: "2.99 $",
@@ -16,7 +16,7 @@ export default function Cart() {
     },
     {
       image: "/vegetable-item-5.jpg",
-      name: "Mustafa",
+      name: "potatoes",
       Price: "2.99 $",
       quantity: "Sheikh",
       total: "2.99 $",
@@ -24,7 +24,7 @@ export default function Cart() {
     },
     {
       image: "/single-item.jpg",
-      name: "Mustafa",
+      name: "Awesome Brocoli",
       Price: "2.99 $",
       quantity: "Sheikh",
       total: "2.99 $",
@@ -33,15 +33,15 @@ export default function Cart() {
   ];
   return (
     <div class="w-[80%] mx-auto py-5">
-      <table class="table w-full">
+      <table class="table w-full mt-20">
         <thead>
-          <tr class="text-left">
-            <th>Products</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th>Handle</th>
+          <tr class="text-left text-[#747d88] ">
+            <th className="text-[1rem] font-[500]">Products</th>
+            <th className="text-[1rem] font-[500]">Name</th>
+            <th className="text-[1rem] font-[500]">Price</th>
+            <th className="text-[1rem] font-[500]">Quantity</th>
+            <th className="text-[1rem] font-[500]">Total</th>
+            <th className="text-[1rem] font-[500]">Handle</th>
           </tr>
         </thead>
 
@@ -58,10 +58,14 @@ export default function Cart() {
                 </div>
               </th>
               <td>
-                <p class="py-10">{item?.name}</p>
+                <p class="py-10 text-[#747d88] font-[400] font-openSans text-[1rem]">
+                  {item?.name}
+                </p>
               </td>
               <td>
-                <p class=" py-10">{item?.Price}</p>
+                <p class=" py-10 text-[#747d88] font-[400] font-openSans text-[1rem]">
+                  {item?.Price}
+                </p>
               </td>
               <td>
                 <div class="flex items-center mt-4">
@@ -69,12 +73,14 @@ export default function Cart() {
                 </div>
               </td>
               <td>
-                <p class=" py-10">2.99 $</p>
+                <p class=" py-10 text-[#747d88] font-[400] text-[1rem] font-openSans">
+                  2.99 $
+                </p>
               </td>
               <td>
-                <button class="btn rounded-full bg-light border mt-4 py-2 px-2">
+                <button class="btn rounded-full bg-light border mt-4 py-2 px-2 bg-[#f4f6f8]">
                   <i class="fas fa-times text-danger  ">
-                    <IoCloseSharp className="text-[#dc3545] font-[900] text-[20px]" />
+                    <IoCloseSharp className="text-[#dc3545] font-[600] text-[20px]" />
                   </i>
                 </button>
               </td>
@@ -82,7 +88,7 @@ export default function Cart() {
           ))}
         </tbody>
       </table>
-      <div className="mt-10 mb-5 flex gap-16">
+      <div className=" md:flex flex-wrap gap-y-6 mt-10 mb-5 flex gap-16">
         <input
           type="text"
           placeholder="Coupon Code"
